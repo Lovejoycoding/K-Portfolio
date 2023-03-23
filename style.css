@@ -1,0 +1,396 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* .container.head{
+    border: 1px solid red;
+} */
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+img.nav-logo{
+    max-width: 50px;
+}
+h2.brand{
+    display: flex;
+    font-size: 50px;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+a.nav-link{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+a.nav-link:hover{
+    font-size: 22px;
+    color: red;
+    cursor: pointer;
+}
+
+.background{
+    min-width: 100%;
+    height: 90.6vh;
+    background-image: url(https://i.postimg.cc/Jz0pcPDM/bookbag.jpg);
+    background-size: cover;
+    background-position: center;
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; */
+    
+}
+
+.travel-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+
+}
+.travel-h2{
+    font-size: 25px;
+    font-family: Noto Sans JP, sans-serif;
+    font-weight: 900;
+    padding-bottom: 25px;
+    margin: 0;
+    background: rgba(231, 231, 231, .2);
+}
+.travel-h1{
+    font-size: 70px;
+    font-family: 'Londrina Sketch', cursive, sans-serif;
+    font-weight: 900;
+    padding-bottom: 25px;
+    margin: 0;
+}
+.travel-h2 span{
+    color: rgb(46, 163, 136);
+}
+ .travel-h1 span{
+    color: rgb(46, 163, 136);
+}
+p.travel-description{
+    font-size: 26px;
+    font-family: Noto Sans JP, sans-serif;
+    color: black;
+    background: rgba(231, 231, 231, .4);
+}
+.travel-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.travel-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:lightslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+.travel-img{
+    max-width: 50px;
+
+}
+.about-background{
+background-image: url(https://i.postimg.cc/d395nfjt/back.jpg);
+min-width: 100%;
+
+background-size: cover;
+background-position: center;
+}
+.about{
+    /* margin: 5px; */
+}
+.about-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 20px;
+    padding: 25px;
+    text-align: justify;
+    }
+.about-square img.about-img{
+    max-width: 400px;
+}
+.about-me{
+    max-width: 600px;
+/* background: rgba(231, 231, 231, .2); */
+}
+.about-me-h1{
+    font-size: 25px;
+    font-family: Noto Sans JP, sans-serif;
+    font-weight: 400;
+    color: black;
+    line-height: 1.5;
+    background: rgba(231, 231, 231, .3);
+}
+.projects-row{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    padding: 10px;
+}
+.project{
+    border: 2px solid black;
+    padding-bottom: 20px;
+}
+.project-img{
+    max-width: 400px;
+}
+li{
+    padding: 10px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+a.btn{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(64, 67, 255);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    width: 25%;
+
+}
+.contact-form{
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}
+input{
+    display: flex;
+    width: 400px;
+}
+textarea{
+    display: flex;
+    width: 400px;
+}
+#exampleFormControlInput1{
+    font-size: 18px;
+    color: violet;
+    padding: 5px;
+}
+#exampleFormControlTextarea1{
+    font-size: 18px;
+    color: violet;
+    padding: 5px;
+}
+
+.contact-row{
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+}
+label{
+    display: flex;
+    font-size: 20px;
+}
+.contact-img{
+max-width: 400px;
+padding: 15px;
+margin: 0 auto;
+}
+button.btn{
+    font-size: 25px;
+    margin: 10px;
+} 
+nav.foot{
+display: flex;
+justify-content: space-evenly;
+gap: 30px;
+}
+.name-icon {
+    text-align: center;
+   
+}
+.name-icon a{ 
+    text-decoration: none;
+    color: #ff0900;
+    font-size: 20px;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-row{
+        display: flex;
+       flex-direction: column;
+     
+        }
+    .about-square img.about-img{
+        max-width: 100%;
+    }
+    .about-me{
+        max-width: 100%;
+    }
+    .about-me-h1{
+        font-size: 25px;    
+    }
+}
+@media only screen and (max-width: 960px) {
+    h2.brand{
+        font-size: 30px;
+    }
+    .travel-circle{
+        width: 70px;
+        height: 70px;
+        margin: 15px;
+}
+    .travel-img{
+        max-width: 40px;
+
+}
+.projects-row{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.project{
+    border: 2px solid black;
+}
+.project-img{
+    max-width: 100%;
+}
+
+.contact-form{
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}
+input{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+}
+textarea{
+    display: flex;
+    max-width: 100%;
+}
+#exampleFormControlInput1{
+    font-size: 18px;
+    color: violet;
+    padding: 5px;
+}
+#exampleFormControlTextarea1{
+    font-size: 18px;
+    color: violet;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.contact-row{
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
+}
+label{
+    display: flex;
+     flex-direction: column;
+    font-size: 20px;
+}
+.contact-img{
+max-width: 100%;
+padding: 15px;
+margin: 0 auto;
+}
+button.btn{
+    font-size: 25px;
+    margin: 10px;
+}
+}
+@media only screen and (max-width: 650px) {
+h2.brand{
+    display: none;
+}
+}
+
+    
+@media only screen and (max-width: 400px) {
+    .nav-container{
+        padding: 0 10px
+}
+h2.brand{
+    display: none; 
+}
+a.nav-link{
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+a.nav-link:hover{
+    font-size: 17px;
+}
+.travel-h2{
+    font-size: 20px;
+    
+}
+.travel-h1{
+    font-size: 40px;
+   
+}
+.travel-h2 span{
+    color: rgb(46, 163, 136);
+}
+.travel-h1 span{
+    color: rgb(46, 163, 136);
+}
+p.travel-description{
+    font-size: 16px;
+    font-family: Noto Sans JP, sans-serif;
+    color: black;
+    background: rgba(231, 231, 231, .4);
+
+}
+.travel-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.travel-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.travel-img{
+    max-width: 30px;
+
+}
+.about-row{
+    display: flex;
+   flex-direction: column;
+    }
+.about-square img.about-img{
+    max-width: 100%;
+}
+.about-me{
+    max-width: 100%;
+}
+.about-me-h1{
+    font-size: 20px;
+    line-height: normal;
+}
+
+}
+
